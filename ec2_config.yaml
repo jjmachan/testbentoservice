@@ -1,0 +1,19 @@
+api_version: v1
+metadata:
+  name: testservice
+  operator: aws-ec2
+spec:
+  bento: ./saved_dir
+  region: ap-south-1
+  instance_type: t2.micro
+  ami_id: /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2
+  ec2_auto_scale:
+    min_size: 1
+    desired_capacity: 1
+    max_size: 1
+  elastic_load_balancing:
+    health_check_interval_seconds: 5
+    health_check_path: /healthz
+    health_check_port: 5000
+    health_check_timeout_seconds: 3
+    healthy_threshold_count: 2
