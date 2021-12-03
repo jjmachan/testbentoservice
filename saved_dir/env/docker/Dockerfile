@@ -23,6 +23,9 @@ RUN ./env/docker/init.sh user_setup_script
 # copy over all remaining bento files
 COPY --chown=bentoml:bentoml . ./
 
+RUN pip install git+https://github.com/bentoml/bentoml.git@bentoml-1.0
+RUN pip install numpy sklearn
+
 # Default port for BentoML Service
 EXPOSE 5000
 
