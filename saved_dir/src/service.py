@@ -2,7 +2,7 @@
 import bentoml
 from bentoml.io import JSON
 
-SERVICE_NAME = "TestService"
+SERVICE_NAME = "testservice"
 svc = bentoml.Service(SERVICE_NAME)
 
 

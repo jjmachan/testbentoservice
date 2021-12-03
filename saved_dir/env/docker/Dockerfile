@@ -1,4 +1,4 @@
-FROM bentoml/model-server:0.13.1-py37
+FROM bentoml/model-server:0.13.1-slim-py37
 
 ARG UID=1034
 ARG GID=1034
@@ -20,8 +20,6 @@ RUN ./env/docker/init.sh install_pip_packages
 RUN ./env/docker/init.sh install_wheels
 RUN ./env/docker/init.sh user_setup_script
 
-RUN pip install git+https://github.com/bentoml/bentoml.git@bentoml-1.0
-RUN pip install numpy sklearn
 # copy over all remaining bento files
 COPY --chown=bentoml:bentoml . ./
 
@@ -31,4 +29,4 @@ EXPOSE 5000
 USER bentoml
 RUN chmod +x ./env/docker/entrypoint.sh
 ENTRYPOINT [ "./env/docker/entrypoint.sh" ]
-CMD ["bentoml", "serve", "."]
+CMD ["bentoml", "serve", "."]  # TODO: add --production flag
