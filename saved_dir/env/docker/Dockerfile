@@ -1,4 +1,4 @@
-FROM bentoml/model-server:0.13.1-slim-py37
+FROM bentoml/model-server:0.13.1-py37
 
 ARG UID=1034
 ARG GID=1034
@@ -32,4 +32,4 @@ EXPOSE 5000
 USER bentoml
 RUN chmod +x ./env/docker/entrypoint.sh
 ENTRYPOINT [ "./env/docker/entrypoint.sh" ]
-CMD ["bentoml", "serve", "."]  # TODO: add --production flag
+CMD ["bentoml", "serve", "--production", "."]
