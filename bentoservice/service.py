@@ -12,4 +12,4 @@ async def classify(input_json):
 
 
 # make sure to expose the asgi_app from the service instance
-app = svc.asgi_app
+# app = svc.asgi_app
