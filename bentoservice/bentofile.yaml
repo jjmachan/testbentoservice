@@ -1,0 +1,11 @@
+service: "service:svc"
+description: "test"
+labels:
+  owner: bentoml-team
+  stage: demo
+include:
+- "*.py"
+python:
+  packages:
+    - scikit-learn
+    - pandas
