@@ -1,7 +1,0 @@
-service: service:svc
-name: testservice
-version: 5dvfy3cuisy6zjmmusy4drbc6
-bentoml_version: 0.13.2.dev273+gcc111ce4
-creation_time: 2021-12-03 14:25:48.393517+00:00
-labels: {}
-models: []
