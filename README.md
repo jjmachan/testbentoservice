@@ -6,18 +6,17 @@ This a prototype service that I build to test out all the features of bentoml
 
 ## Project Structure
 
-./service.py - This is the bento service contains the logic of our service.
+`service.py` - This is the bento service contains the logic of our service.
 
-./build.py - Build script for bento. This will build and export the bento into
-./saved_dir
+`bentofile.yaml` - The build file for bento service.
 
-./ec2_config.yaml - bentoctl config for AWS-EC2 deployment.
+`build.py` - Build script for bento. This will build and export the bento into
+`./saved_dir`
 
+`ec2_config.yaml` - bentoctl config for AWS-EC2 deployment.
 
-## Building Docker Container
+## Building this Bento
 
-1. Modify docker file
+Run `python build.py` and this will create the bento and export it to `saved_dir` for you.
 
-2. from inside saved_dir. `docker build -f env/docker/Dockerfile -t testbento`
-
-3. `docker run -p 5000:5000 testbento`
+Else you can do `bentoml build` to build and save it into the local store.
