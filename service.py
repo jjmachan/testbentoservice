@@ -1,4 +1,3 @@
-# hello.py
 import bentoml
 from bentoml.io import JSON
 
@@ -7,7 +6,7 @@ svc = bentoml.Service(SERVICE_NAME)
 
 
 @svc.api(input=JSON(), output=JSON())
-async def classify(input_json):
+async def json(input_json):
     return {"input_received": input_json, "foo": "bar"}
 
 

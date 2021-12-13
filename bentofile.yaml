@@ -5,6 +5,6 @@ labels:
   stage: demo
 include:
 - "*.py"
-docker:
-  base_image: bentoml/model-server:0.13.1-py37
-  setup_script: "./setup_env.sh"
+#docker:
+  #base_image: bentoml/model-server:0.13.1-py37
+  #setup_script: "./setup_env.sh"
