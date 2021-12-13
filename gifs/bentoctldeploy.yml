@@ -1,0 +1,602 @@
+config:
+  command: zsh
+  cwd: /home/jjmachan/jjmachan/bentoml/test-projects/bento10/testbentoservice
+  env:
+    recording: true
+  cols: 100
+  rows: 30
+  repeat: 0
+  quality: 100
+  frameDelay: auto
+  maxIdleTime: 2000
+  frameBox:
+    type: solid
+    title: null
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 17
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 472
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                              \r \r\e]2;jjmachan@knowhere:~/jjmachan/bentoml/test-projects/bento10/testbentoservice\a\e]1;..tbentoservice\a"
+  - delay: 25
+    content: "\r\e[0m\e[27m\e[24m\e[J\e[36mtestbentoservice\e[00m\e[31m|\e[00m\e[00m\e[32mmain\e[33m⚡\e[00m\e[00m \e[36m⇒\e[00m \e[K\e[?1h\e=\e[?2004h"
+  - delay: 100
+    content: b
+  - delay: 100
+    content: "\bbe"
+  - delay: 100
+    content: 'n'
+  - delay: 100
+    content: t
+  - delay: 100
+    content: o
+  - delay: 100
+    content: c
+  - delay: 100
+    content: t
+  - delay: 100
+    content: l
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: o
+  - delay: 100
+    content: p
+  - delay: 100
+    content: e
+  - delay: 100
+    content: r
+  - delay: 100
+    content: a
+  - delay: 100
+    content: t
+  - delay: 100
+    content: o
+  - delay: 100
+    content: r
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: a
+  - delay: 100
+    content: d
+  - delay: 100
+    content: d
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: a
+  - delay: 100
+    content: w
+  - delay: 100
+    content: s
+  - delay: 100
+    content: '-'
+  - delay: 100
+    content: e
+  - delay: 100
+    content: c
+  - delay: 100
+    content: '2'
+  - delay: 304
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;bentoctl operator add aws-ec2\a\e]1;bentoctl\a"
+  - delay: 421
+    content: "\e[?25l"
+  - delay: 84
+    content: "\e[32m⠋\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠙\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠹\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠸\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠼\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠴\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠦\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠧\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠇\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠏\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠋\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠙\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠹\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠸\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠼\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠴\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠦\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠧\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠇\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠏\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠋\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠙\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠹\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠸\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠼\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 80
+    content: "\r\e[2K\e[32m⠴\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠦\e[0m Cloning git@github.com:bentoml/aws-ec2-deploy.git \r"
+  - delay: 23
+    content: "\e[?25l"
+  - delay: 82
+    content: "\e[32m⠋\e[0m Installing dependencies from requirements.txt"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠙\e[0m Installing dependencies from requirements.txt"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠹\e[0m Installing dependencies from requirements.txt"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠸\e[0m Installing dependencies from requirements.txt"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠼\e[0m Installing dependencies from requirements.txt"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠴\e[0m Installing dependencies from requirements.txt"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠦\e[0m Installing dependencies from requirements.txt"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠧\e[0m Installing dependencies from requirements.txt"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠇\e[0m Installing dependencies from requirements.txt"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠏\e[0m Installing dependencies from requirements.txt"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠋\e[0m Installing dependencies from requirements.txt"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠙\e[0m Installing dependencies from requirements.txt"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠹\e[0m Installing dependencies from requirements.txt"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠸\e[0m Installing dependencies from requirements.txt"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠼\e[0m Installing dependencies from requirements.txt"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠴\e[0m Installing dependencies from requirements.txt"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠦\e[0m Installing dependencies from requirements.txt"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠧\e[0m Installing dependencies from requirements.txt"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠇\e[0m Installing dependencies from requirements.txt"
+  - delay: 74
+    content: "\r\e[2K\e[32m⠙\e[0m Installing dependencies from requirements.txt\r\n\e[?25h\r\e[1A\e[2KAdded aws-ec2!\r\n"
+  - delay: 471
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                              \r \r\e]2;jjmachan@knowhere:~/jjmachan/bentoml/test-projects/bento10/testbentoservice\a\e]1;..tbentoservice\a"
+  - delay: 24
+    content: "\r\e[0m\e[27m\e[24m\e[J\e[36mtestbentoservice\e[00m\e[31m|\e[00m\e[00m\e[32mmain\e[33m⚡\e[00m\e[00m \e[36m⇒\e[00m \e[K\e[?1h\e=\e[?2004h"
+  - delay: 1024
+    content: b
+  - delay: 135
+    content: "\bbe"
+  - delay: 120
+    content: 'n'
+  - delay: 104
+    content: t
+  - delay: 136
+    content: o
+  - delay: 168
+    content: c
+  - delay: 240
+    content: t
+  - delay: 152
+    content: l
+  - delay: 208
+    content: ' '
+  - delay: 824
+    content: d
+  - delay: 312
+    content: e
+  - delay: 296
+    content: p
+  - delay: 168
+    content: l
+  - delay: 192
+    content: o
+  - delay: 119
+    content: y
+  - delay: 600
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;bentoctl deploy\a\e]1;bentoctl\a"
+  - delay: 418
+    content: "\e[7mBentoctl Interactive Deployment Spec Builder\e[0m\r\n\r\n\e[32mWelcome!\e[0m You are now in interactive mode.\r\n\r\nThis mode will help you setup the deployment_spec.yaml file required for\r\ndeployment. Fill out the appropriate values for the fields.\r\n\r\n\e[2m(deployment spec will be saved to: ./deployment_spec.yaml)\e[0m\r\n\r\n\e[1mapi_version:\e[0m v1\r\n\e[1mmetadata: \e[0m\r\n\e[38;5;244mHelp: The name for the deployment\e[0m                                                              \r\nname: "
+  - delay: 1466
+    content: t
+  - delay: 49
+    content: e
+  - delay: 159
+    content: s
+  - delay: 81
+    content: t
+  - delay: 368
+    content: s
+  - delay: 167
+    content: e
+  - delay: 72
+    content: r
+  - delay: 217
+    content: v
+  - delay: 143
+    content: i
+  - delay: 120
+    content: c
+  - delay: 65
+    content: e
+  - delay: 1568
+    content: "\r\n\r\e[2K\e[1A\e[2K\r\e[2K\e[1A\e[2K    name: testservice\r\n"
+  - delay: 161
+    content: "\e[?1h\e=\e[?25lChoose an operator\r\n  \e[7maws-ec2\e(B\e[m\r  \r\e[31m\e[1m> \e(B\e[m\r"
+  - delay: 2146
+    content: "\e[A\e[M\e[M\e[?12l\e[?25h\e[?1l\e>    operator: aws-ec2\r\n\e[1mspec: \e[0m\r\n\e[38;5;244mHelp: Provide either a path to the bento or the bento tag\e[0m                                      \r\nbento: "
+  - delay: 1443
+    content: t
+  - delay: 64
+    content: e
+  - delay: 191
+    content: s
+  - delay: 72
+    content: t
+  - delay: 681
+    content: s
+  - delay: 144
+    content: e
+  - delay: 79
+    content: r
+  - delay: 225
+    content: v
+  - delay: 160
+    content: i
+  - delay: 120
+    content: c
+  - delay: 48
+    content: e
+  - delay: 496
+    content: ':'
+  - delay: 312
+    content: l
+  - delay: 88
+    content: a
+  - delay: 168
+    content: t
+  - delay: 55
+    content: e
+  - delay: 168
+    content: s
+  - delay: 121
+    content: t
+  - delay: 584
+    content: "\r\n\r\e[2K\e[1A\e[2K\r\e[2K\e[1A\e[2K"
+  - delay: 25
+    content: "    bento: testservice:4uaj4lsy65i6zdxdajbli3buu\r\n\e[38;5;244mHelp: AWS region to which you want to deploy\e[0m                                                   \r\nregion [\e[1mus-west-1\e[0m]: "
+  - delay: 5963
+    content: "\r\n\r\e[2K\e[1A\e[2K\r\e[2K\e[1A\e[2K    region: us-west-1\r\n\e[38;5;244mHelp: Instance type for the EC2 deployment. See https://aws.amazon.com/ec2/instance-types/ for \e[0m\r\n\e[38;5;244mthe entire list.\e[0m                                                                               \r\ninstance_type [\e[1mt2.micro\e[0m]: "
+  - delay: 564
+    content: "\r\n\r\e[2K\e[1A\e[2K\r\e[2K\e[1A\e[2K\e[1A\e[2K    instance_type: t2.micro\r\n\e[38;5;244mHelp: Amazon Machine Image (AMI) used for the EC2 instance. Check out \e[0m                         \r\n\e[38;5;244mhttps://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html for more information.\e[0m            \r\nami_id [\e[1m/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2\e[0m]: "
+  - delay: 906
+    content: "\r\n\r\e[2K\e[1A\e[2K\r\e[2K\e[1A\e[2K\e[1A\e[2K    ami_id: /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2\r\n\e[38;5;244mHelp: If using GPU-accelerated instance_types then ennable this.\e[0m                               \r\nenable_gpus [\e[1mFalse\e[0m]: "
+  - delay: 731
+    content: "\r\n\r\e[2K\e[1A\e[2K\r\e[2K\e[1A\e[2K    enable_gpus: False\r\n    ec2_auto_scale:\r\n\e[38;5;244mHelp: The minimum number of instances for the auto scale group\e[0m                                 \r\nmin_size [\e[1m1\e[0m]: "
+  - delay: 592
+    content: "\r\n\r\e[2K\e[1A\e[2K\r\e[2K\e[1A\e[2K        min_size: 1\r\n\e[38;5;244mHelp: The Auto Scaling Group will start with as many instances as specified by \e[0m                \r\n\e[38;5;244m'desired_capacity'.\e[0m                                                                            \r\ndesired_capacity [\e[1m1\e[0m]: "
+  - delay: 475
+    content: "\r\n\r\e[2K\e[1A\e[2K\r\e[2K\e[1A\e[2K\e[1A\e[2K        desired_capacity: 1\r\n\e[38;5;244mHelp: The maximum number of instances for the autoscaling group\e[0m                                \r\nmax_size [\e[1m1\e[0m]: "
+  - delay: 428
+    content: "\r\n\r\e[2K\e[1A\e[2K\r\e[2K\e[1A\e[2K        max_size: 1\r\n    elastic_load_balancing:\r\n\e[38;5;244mHelp: Interval between health checks of instances in seconds.\e[0m                                  \r\nhealth_check_interval_seconds [\e[1m5\e[0m]: "
+  - delay: 624
+    content: "\r\n\r\e[2K\e[1A\e[2K\r\e[2K\e[1A\e[2K        health_check_interval_seconds: 5\r\n\e[38;5;244mHelp: The URL path for health check\e[0m                                                            \r\nhealth_check_path [\e[1m/healthz\e[0m]: "
+  - delay: 578
+    content: "\r\n\r\e[2K\e[1A\e[2K\r\e[2K\e[1A\e[2K        health_check_path: /healthz\r\n\e[38;5;244mHelp: Health check port\e[0m                                                                        \r\nhealth_check_port [\e[1m5000\e[0m]: "
+  - delay: 549
+    content: "\r\n\r\e[2K\e[1A\e[2K\r\e[2K\e[1A\e[2K        health_check_port: 5000\r\n\e[38;5;244mHelp: Seconds to wait before health check times out\e[0m                                            \r\nhealth_check_timeout_seconds [\e[1m3\e[0m]: "
+  - delay: 522
+    content: "\r\n\r\e[2K\e[1A\e[2K\r\e[2K\e[1A\e[2K        health_check_timeout_seconds: 3\r\n\e[38;5;244mHelp: Number of consecutive health check successes requiredbefore moving the instance to a \e[0m    \r\n\e[38;5;244mHealthy state.\e[0m                                                                                 \r\nhealthy_threshold_count [\e[1m2\e[0m]: "
+  - delay: 547
+    content: "\r\n\r\e[2K\e[1A\e[2K\r\e[2K\e[1A\e[2K\e[1A\e[2K        healthy_threshold_count: 2\r\n    environment_variables:\r\nDo you want to add item to environment_variables \e[1m(y/n)\e[0m: "
+  - delay: 889
+    content: 'n'
+  - delay: 631
+    content: "\r\n\r\e[2K\e[1A\e[2Kfilename for deployment_spec [\e[1mdeployment_spec.yaml\e[0m]: "
+  - delay: 1822
+    content: "\r\n"
+  - delay: 5
+    content: "\e[32mdeployment spec generated to: deployment_spec.yaml\e[0m\r\n"
+  - delay: 82
+    content: "\e[32m⠋\e[0m Building image"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠙\e[0m Building image"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠹\e[0m Building image"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠸\e[0m Building image"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠼\e[0m Building image"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠴\e[0m Building image"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠦\e[0m Building image"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠧\e[0m Building image"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠇\e[0m Building image"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠏\e[0m Building image"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠋\e[0m Building image"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠙\e[0m Building image"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠹\e[0m Building image"
+  - delay: 83
+    content: "\r\e[2K\e[32m⠸\e[0m Building image"
+  - delay: 80
+    content: "\r\e[2K\e[32m⠼\e[0m Building image"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠴\e[0m Building image"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠦\e[0m Building image"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠧\e[0m Building image"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠇\e[0m Building image"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠏\e[0m Building image"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠋\e[0m Building image"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠙\e[0m Building image"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠹\e[0m Building image"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠸\e[0m Building image"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠼\e[0m Building image"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠴\e[0m Building image"
+  - delay: 57
+    content: "\r\e[2K\e[32m⠙\e[0m Building image\r\n\e[?25h\r\e[1A\e[2K\e[?25l"
+  - delay: 81
+    content: "\e[32m⠋\e[0m Pushing image to ECR"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠙\e[0m Pushing image to ECR"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠹\e[0m Pushing image to ECR"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠸\e[0m Pushing image to ECR"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠼\e[0m Pushing image to ECR"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠴\e[0m Pushing image to ECR"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠦\e[0m Pushing image to ECR"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠧\e[0m Pushing image to ECR"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠇\e[0m Pushing image to ECR"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠏\e[0m Pushing image to ECR"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠋\e[0m Pushing image to ECR"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠙\e[0m Pushing image to ECR"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠹\e[0m Pushing image to ECR"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠸\e[0m Pushing image to ECR"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠼\e[0m Pushing image to ECR"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠴\e[0m Pushing image to ECR"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠦\e[0m Pushing image to ECR"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠧\e[0m Pushing image to ECR"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠇\e[0m Pushing image to ECR"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠏\e[0m Pushing image to ECR"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠋\e[0m Pushing image to ECR"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠙\e[0m Pushing image to ECR"
+  - delay: 61
+    content: "\r\e[2K\e[32m⠸\e[0m Pushing image to ECR\r\n\e[?25h\r\e[1A\e[2KImage built and pushed [\e[1m213386773652.dkr.ecr.ap-south-1.amazonaws.com/testservice-latest-repo\e[0m]\r\nGenerated CF template \r\n[\e[1m./testservice-4uaj4lsy65i6zdxdajbli3buu-deployable/testservice-latest-template\e[0m]\r\n\e[?25l"
+  - delay: 81
+    content: "\e[32m⠋\e[0m Building CF template"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠙\e[0m Building CF template"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠹\e[0m Building CF template"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠸\e[0m Building CF template"
+  - delay: 80
+    content: "\r\e[2K\e[32m⠼\e[0m Building CF template"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠴\e[0m Building CF template"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠦\e[0m Building CF template"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠧\e[0m Building CF template"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠇\e[0m Building CF template"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠏\e[0m Building CF template"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠋\e[0m Building CF template"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠙\e[0m Building CF template"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠹\e[0m Building CF template"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠸\e[0m Building CF template"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠼\e[0m Building CF template"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠴\e[0m Building CF template"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠦\e[0m Building CF template"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠧\e[0m Building CF template"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠼\e[0m Building CF template"
+  - delay: 54
+    content: "\r\e[2KBuilt CF template\r\n\e[32m⠦\e[0m Building CF template\r\e[2K\e[32m⠦\e[0m Building CF template\r\n\e[?25h\r\e[1A\e[2K\e[?25l"
+  - delay: 82
+    content: "\e[32m⠋\e[0m Deploying to EC2"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠙\e[0m Deploying to EC2"
+  - delay: 80
+    content: "\r\e[2K\e[32m⠹\e[0m Deploying to EC2"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠸\e[0m Deploying to EC2"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠼\e[0m Deploying to EC2"
+  - delay: 80
+    content: "\r\e[2K\e[32m⠴\e[0m Deploying to EC2"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠦\e[0m Deploying to EC2"
+  - delay: 80
+    content: "\r\e[2K\e[32m⠧\e[0m Deploying to EC2"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠇\e[0m Deploying to EC2"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠏\e[0m Deploying to EC2"
+  - delay: 80
+    content: "\r\e[2K\e[32m⠋\e[0m Deploying to EC2"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠙\e[0m Deploying to EC2"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠹\e[0m Deploying to EC2"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠸\e[0m Deploying to EC2"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠼\e[0m Deploying to EC2"
+  - delay: 81
+    content: "\r\e[2K\e[32m⠴\e[0m Deploying to EC2"
+  - delay: 82
+    content: "\r\e[2K\e[32m⠦\e[0m Deploying to EC2"
+  - delay: 79
+    content: "\r\e[2K\e[32m⠧\e[0m Deploying to EC2\r\n\e[?25h\r\e[1A\e[2KSuccessful deployment!\r\n"
+  - delay: 163
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                              \r \r\e]2;jjmachan@knowhere:~/jjmachan/bentoml/test-projects/bento10/testbentoservice\a\e]1;..tbentoservice\a"
+  - delay: 23
+    content: "\r\e[0m\e[27m\e[24m\e[J\e[36mtestbentoservice\e[00m\e[31m|\e[00m\e[00m\e[32mmain\e[33m⚡\e[00m\e[00m \e[36m⇒\e[00m \e[K\e[?1h\e=\e[?2004h"
+  - delay: 100
+    content: b
+  - delay: 100
+    content: "\bbe"
+  - delay: 100
+    content: 'n'
+  - delay: 100
+    content: t
+  - delay: 100
+    content: o
+  - delay: 100
+    content: c
+  - delay: 100
+    content: t
+  - delay: 100
+    content: l
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: d
+  - delay: 100
+    content: e
+  - delay: 100
+    content: s
+  - delay: 100
+    content: c
+  - delay: 100
+    content: r
+  - delay: 100
+    content: i
+  - delay: 100
+    content: b
+  - delay: 100
+    content: e
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: '-f deployment_spec.yaml'
+  - delay: 672
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;bentoctl describe -f ec2_config.yaml\a\e]1;bentoctl\a"
+  - delay: 400
+    content: "\e[1m{\e[0m\r\n\e[2;32m│   \e[0m\e[32m'InstanceDetails'\e[0m: \e[1m[\e[0m\r\n\e[2;32m│   │   \e[0m\e[1m{\e[0m\r\n\e[2;32m│   │   │   \e[0m\e[32m'instance_id'\e[0m: \e[32m'i-0ff728b8e66b74a3c'\e[0m,\r\n\e[2;32m│   │   │   \e[0m\e[32m'endpoint'\e[0m: \e[32m'35.154.110.203'\e[0m,\r\n\e[2;32m│   │   │   \e[0m\e[32m'state'\e[0m: \e[32m'InService'\e[0m,\r\n\e[2;32m│   │   │   \e[0m\e[32m'health_status'\e[0m: \e[32m'Healthy'\e[0m\r\n\e[2;32m│   │   \e[0m\e[1m}\e[0m\r\n\e[2;32m│   \e[0m\e[1m]\e[0m,\r\n\e[2;32m│   \e[0m\e[32m'Endpoints'\e[0m: \e[1m[\e[0m\e[32m'35.154.110.203:5000/'\e[0m\e[1m]\e[0m,\r\n\e[2;32m│   \e[0m\e[32m'TargetGroup'\e[0m: \e[32m'arn:aws:elasticloadbalancing:ap-south-1:213386773652:targetgroup/tests-Targe-1RSBQDEJISPQ4/fdd34806b55f2b25'\e[0m,\r\n\e[2;32m│   \e[0m\e[32m'Url'\e[0m: \e[32m'http://testservice-latest-elb-1869833658.ap-south-1.elb.amazonaws.com'\e[0m\r\n\e[1m}\e[0m\r\n"
+  - delay: 177
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                              \r \r\e]2;jjmachan@knowhere:~/jjmachan/bentoml/test-projects/bento10/testbentoservice\a\e]1;..tbentoservice\a"
+  - delay: 27
+    content: "\r\e[0m\e[27m\e[24m\e[J\e[36mtestbentoservice\e[00m\e[31m|\e[00m\e[00m\e[32mmain\e[33m⚡\e[00m\e[00m \e[36m⇒\e[00m \e[K\e[?1h\e=\e[?2004h"
+  - delay: 2892
+    content: "\e[?2004l\r\r\n"

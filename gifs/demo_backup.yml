@@ -1,0 +1,163 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: zsh
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/jjmachan/jjmachan/bentoml/test-projects/bento10/testbentoservice
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 100
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: solid
+    title: null
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 17
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 638
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                              \r \r\e]2;jjmachan@knowhere:~/jjmachan/bentoml/test-projects/bento10/testbentoservice\a\e]1;..tbentoservice\a"
+  - delay: 23
+    content: "\r\e[0m\e[27m\e[24m\e[J\e[36mtestbentoservice\e[00m\e[31m|\e[00m\e[00m\e[32mmain\e[33m⚡\e[00m\e[00m \e[36m⇒\e[00m \e[K\e[?1h\e=\e[?2004h"
+  - delay: 2609
+    content: t
+  - delay: 39
+    content: "\bte"
+  - delay: 151
+    content: s
+  - delay: 56
+    content: t
+  - delay: 665
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;test\a\e]1;test\a\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                              \r \r\e]2;jjmachan@knowhere:~/jjmachan/bentoml/test-projects/bento10/testbentoservice\a\e]1;..tbentoservice\a"
+  - delay: 28
+    content: "\r\e[0m\e[27m\e[24m\e[J\e[36mtestbentoservice\e[00m\e[31m|\e[00m\e[00m\e[32mmain\e[33m⚡\e[00m\e[00m \e[36m⇒\e[00m \e[K\e[?1h\e=\e[?2004h"
+  - delay: 1162
+    content: e
+  - delay: 121
+    content: "\bec"
+  - delay: 111
+    content: h
+  - delay: 112
+    content: o
+  - delay: 201
+    content: ' '
+  - delay: 208
+    content: s
+  - delay: 63
+    content: o
+  - delay: 105
+    content: m
+  - delay: 40
+    content: e
+  - delay: 184
+    content: t
+  - delay: 40
+    content: h
+  - delay: 120
+    content: i
+  - delay: 104
+    content: g
+  - delay: 17
+    content: 'n'
+  - delay: 326
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;echo somethign\a\e]1;echo\asomethign\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                              \r \r\e]2;jjmachan@knowhere:~/jjmachan/bentoml/test-projects/bento10/testbentoservice\a\e]1;..tbentoservice\a"
+  - delay: 25
+    content: "\r\e[0m\e[27m\e[24m\e[J\e[36mtestbentoservice\e[00m\e[31m|\e[00m\e[00m\e[32mmain\e[33m⚡\e[00m\e[00m \e[36m⇒\e[00m \e[K\e[?1h\e=\e[?2004h"
+  - delay: 2766
+    content: "\e[?2004l\r\r\n"
