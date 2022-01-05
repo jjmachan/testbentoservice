@@ -1,0 +1,14 @@
+api_version: v1
+metadata:
+  name: testservice
+  operator: gcp-cloud-run
+spec:
+  bento: testservice:vj2wrqs7egy6zn5zusy4drbc6
+  project_id: bentoml-316710
+  region: asia-east1
+  port: 5000
+  max_instances: 1
+  memory: 512Mi
+  cpu: 1
+  allow_unauthenticated: true
+  platform: managed
