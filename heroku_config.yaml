@@ -1,0 +1,8 @@
+api_version: v1
+metadata:
+  name: testservice
+  operator: heroku
+spec:
+  bento: testservice:vj2wrqs7egy6zn5zusy4drbc6
+  dyno_counts: 1
+  dyno_type: free
