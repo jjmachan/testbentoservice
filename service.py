@@ -8,7 +8,10 @@ svc = bentoml.Service(SERVICE_NAME)
 @svc.api(input=JSON(), output=JSON())
 async def json(input_json):
     print(input_json)
-    return {"input_received": input_json, "foo": "bar"}
+    return {
+        "input_received": input_json,
+        "bentoml_version": bentoml.__version__,
+    }
 
 
 @svc.api(input=NumpyNdarray(), output=NumpyNdarray())
