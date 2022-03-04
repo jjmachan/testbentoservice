@@ -1,0 +1,9 @@
+api_version: v1
+metadata:
+  name: testservice
+  operator: google-compute-engine
+spec:
+  bento: testservice:esftabebw2pswho3
+  project_id: bentoml-316710
+  zone: us-central1-a
+  machine_type: n1-standard-1

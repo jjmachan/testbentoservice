@@ -1,0 +1,13 @@
+api_version: v1
+metadata:
+  name: testbentoservice
+  operator: azure-functions
+spec:
+  bento: testservice:2e33lueutcl7ia4g
+  resource_group: test_rgn
+  acr_name: testrgn01
+  location: East US
+  min_instances: 1
+  max_burst: 2
+  premiume_plan_sku: EP1
+  function_auth_level: anonymous

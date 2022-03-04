@@ -1,0 +1,9 @@
+api_version: v1
+metadata:
+  name: lambdadeployment
+  operator: azure-container-instances
+spec:
+  bento: testservice:latest
+  resource_group_name: test_rgn
+  acr_name: testrgn0
+    
