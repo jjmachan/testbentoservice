@@ -1,0 +1,10 @@
+api_version: v1
+name: testsagemaker
+operator: aws-sagemaker
+template: terraform
+spec:
+  region: ap-south-1
+  instance_type: ml.t2.medium
+  initial_instance_count: 1
+  timeout: 60
+  initial_sampling_percentage: 1

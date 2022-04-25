@@ -1,0 +1,11 @@
+api_version: v1
+name: test-google-cloud-run
+operator: gcp-cloud-run
+template: terraform
+spec:
+  project_id: bentoml-316710
+  region: asia-south1
+  port: 5000
+  max_instances: 1
+  memory: 512Mi
+  cpu: 1
