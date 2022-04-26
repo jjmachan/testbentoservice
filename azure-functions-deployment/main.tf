@@ -2,7 +2,7 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~>3.3"
+      version = "~>2"
     }
   }
 }
@@ -29,7 +29,7 @@ variable "acr_name" {
 }
 
 variable "image_tag" {
-  type = string
+    type = string
 }
 
 variable "image_repository" {
@@ -40,12 +40,16 @@ variable "image_version" {
   type = string
 }
 
-variable "min_instances" {
-  type = number
+variable "max_burst" {
+    type = number
 }
 
-variable "max_burst" {
-  type = number
+variable "min_instances" {
+    type = number
+}
+
+variable "premium_plan_sku" {
+    type = string
 }
 
 
@@ -76,29 +80,34 @@ resource "azurerm_application_insights" "application_insights" {
   application_type    = "other"
 }
 
-resource "azurerm_service_plan" "plan" {
-  name                = "${var.deployment_name}-ElasticPremium"
-  sku_name = "EP1"
+
+resource "azurerm_app_service_plan" "plan" {
+  name                = "${var.deployment_name}-premiumPlan"
   resource_group_name = data.azurerm_resource_group.rg.name
   location            = data.azurerm_resource_group.rg.location
-  os_type                = "Linux"
-  maximum_elastic_worker_count = var.max_burst
-    worker_count = var.min_instances
-}
+  kind                = "Linux"
+  reserved            = true
 
+  sku {
+    tier = "Premium"
+    size = "P1V2"
+  }
+}
 
 data "azurerm_container_registry" "registry" {
   name                = var.acr_name
   resource_group_name = data.azurerm_resource_group.rg.name
 }
 
-resource "azurerm_linux_function_app" "funcApp" {
+resource "azurerm_function_app" "funcApp" {
   name                       = "${var.deployment_name}-${lower(random_id.storage_account.hex)}"
   location                   = data.azurerm_resource_group.rg.location
   resource_group_name        = data.azurerm_resource_group.rg.name
-  service_plan_id        = azurerm_service_plan.plan.id
+  app_service_plan_id        = azurerm_app_service_plan.plan.id
   storage_account_name       = azurerm_storage_account.storage.name
   storage_account_access_key = azurerm_storage_account.storage.primary_access_key
+  version                    = "~3"
+  os_type = "linux"
 
   app_settings = {
     FUNCTION_APP_EDIT_MODE              = "readOnly"
@@ -114,10 +123,16 @@ resource "azurerm_linux_function_app" "funcApp" {
   site_config {
     always_on        = true
     linux_fx_version = "DOCKER|${data.azurerm_container_registry.registry.login_server}/${var.image_repository}:${var.image_version}"
+    elastic_instance_minimum = var.min_instances
+    app_scale_limit = var.max_burst
   }
 
-  depends_on = [azurerm_storage_account.storage]
+  depends_on = [azurerm_storage_account.storage, azurerm_app_service_plan.plan]
 }
 ################################################################################
 # Output value definitions
 ################################################################################
+output url {
+  description = "Base URL for API Gateway stage."
+  value       = azurerm_function_app.funcApp.default_hostname
+}
