@@ -1,2 +1,7 @@
 __pycache__/
 saved_dir
+
+*.terraform*
+terraform.tfstate
+terraform.tfstate.backup
+*.backup
