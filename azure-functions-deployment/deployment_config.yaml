@@ -1,0 +1,10 @@
+api_version: v1
+name: quickstart
+operator: azure-functions
+template: terraform
+spec:
+  resource_group: quickstart
+  acr_name: quickstartjj
+  min_instances: 1
+  max_burst: 2
+  premium_plan_sku: P1v2

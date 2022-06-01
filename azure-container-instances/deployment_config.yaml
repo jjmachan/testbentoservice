@@ -1,0 +1,11 @@
+api_version: v1
+name: testaci
+operator:
+  name: azure-container-instances
+template: terraform
+spec:
+  resource_group: testbentoml
+  acr_name: betnomltest
+  cpu: 1
+  memory: 1
+  bentoml_port: '3000'

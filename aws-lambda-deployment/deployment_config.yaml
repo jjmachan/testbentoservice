@@ -1,8 +1,9 @@
 api_version: v1
 name: testlambda
-operator: aws-lambda
+operator:
+  name: aws-lambda
 template: terraform
 spec:
-  region: ap-south-1
+  region: us-west-1
   timeout: 10
   memory_size: 512

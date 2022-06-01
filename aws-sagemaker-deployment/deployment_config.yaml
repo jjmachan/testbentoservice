@@ -1,6 +1,7 @@
 api_version: v1
-name: testsagemaker
-operator: aws-sagemaker
+name: quickstart
+operator: 
+  name: aws-sagemaker
 template: terraform
 spec:
   region: ap-south-1

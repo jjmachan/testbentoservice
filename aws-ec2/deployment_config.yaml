@@ -1,8 +1,9 @@
 api_version: v1
 name: iris-classifier-ec2
-operator: aws-ec2
+operator: 
+  name: aws-ec2
 template: terraform
 spec:
-  region: ap-south-1
+  region: us-west-1
   instance_type: t2.micro
-  ami_id: ami-0a3277ffce9146b74
+  ami_id: ami-02541b8af977f6cdd
