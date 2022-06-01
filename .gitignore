@@ -5,3 +5,8 @@ saved_dir
 terraform.tfstate
 terraform.tfstate.backup
 *.backup
+
+*/main.tf
+*/startup_script.sh
+*/bentoctl.tfvars
+*/.envrc
